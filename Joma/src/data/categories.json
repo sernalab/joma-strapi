@@ -1,0 +1,101 @@
+{
+  "categories": [
+    {
+      "name": "kits",
+      "subcategory": [
+        "Kits ALFA ROMEO",
+        "Kits BMW",
+        "Kits CITROËN",
+        "Kits CHRYSLER",
+        "Kits FIAT",
+        "Kits FORD",
+        "Kits ISUZU",
+        "Kits JAGUAR",
+        "Kits JEEP",
+        "Kits LANCIA",
+        "Kits LAND ROVER",
+        "Kits MAZDA",
+        "Kits MERCEDES BENZ",
+        "Kits MINI",
+        "Kits MITSUBISHI",
+        "Kits NISSAN",
+        "Kits OPEL",
+        "Kits PEUGEOT",
+        "Kits RENAULT",
+        "Kits SAAB",
+        "Kits SUZUKI",
+        "Kits TOYOTA",
+        "Kits VAG (Audi, Seat, Skoda, VW)",
+        "Kits VOLVO",
+        "Kits VARIOS"
+      ]
+    },
+    {
+      "name": "mecanica",
+      "subcategory": [
+        "Alicates",
+        "Bombas transmisión fluidos",
+        "Centradores embragues",
+        "Destornilladores",
+        "Extractores",
+        "Herramientas de inyección",
+        "Herramientas de corte",
+        "Herramientas magnéticas",
+        "Kits retrasar pistones de freno",
+        "Limpieza / Ultrasonidos",
+        "Llaves dinamométricas",
+        "Llaves de vaso",
+        "Llaves especiales",
+        "Juegos de puntas / vasos",
+        "Palancas y soportes",
+        "Varios mecánica"
+      ]
+    },
+    {
+      "name": "diagnosis",
+      "subcategory": [
+        "Bombas presión/depresión",
+        "Cableados de prueba",
+        "Common Rail",
+        "Compresión",
+        "Comprobadores Batería",
+        "Comprobadores Presión",
+        "Comprobadores Turbo",
+        "Endoscopios",
+        "Lámparas de prueba",
+        "Osciloscopios",
+        "Pinzas Amperiométricas",
+        "Polímetros Digitales y Accesorios",
+        "Tacómetros",
+        "Termómetros Digitales",
+        "Tester fugas de culata",
+        "Tester radiadores",
+        "Varios diagnosis"
+      ]
+    },
+    {
+      "name": "electricidad",
+      "subcategory": [
+        "Alicates electricidad",
+        "Lámparas fluorescentes",
+        "Lámparas de LEDS",
+        "Salvamemorias",
+        "Varios electricidad"
+      ]
+    },
+    {
+      "name": "chapa-pintura",
+      "subcategory": [
+        "Herramientas chapa y pintura",
+        "Herramientas tiraje",
+        "Herramientas de corte",
+        "Lámpara selección colores",
+        "Mantas Ignífugas",
+        "Pinzas tiraje",
+        "Remachadoras",
+        "Remaches plástico",
+        "Rotolines neumáticos"
+      ]
+    }
+  ]
+}
