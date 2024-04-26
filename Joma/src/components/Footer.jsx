@@ -5,9 +5,9 @@ function Footer() {
   return (
     <footer className="bg-gray-200">
       <div className="max-w-screen-xl mx-auto p-4 md:p-8 lg:p-12">
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           <div>
-            <h5 class="font-bold uppercase text-gray-600 mb-3">
+            <h5 className="font-bold uppercase text-gray-600 mb-3">
               Nuestra Empresa
             </h5>
             <nav>
@@ -34,7 +34,7 @@ function Footer() {
             </nav>
           </div>
           <div>
-            <h5 class="font-bold uppercase text-gray-600 mb-3">Legal</h5>
+            <h5 className="font-bold uppercase text-gray-600 mb-3">Legal</h5>
             <nav>
               <ul>
                 <li className="mb-1">
@@ -46,10 +46,10 @@ function Footer() {
               </ul>
             </nav>
           </div>
-          <div class="sm:col-span-2 lg:col-span-1">
-            <div class="max-w-xl text-center mx-auto">
-              <div class="mb-5">
-                <h2 class="text-2xl font-bold md:text-3xl md:leading-tight dark:text-white mb-5">
+          <div className="sm:col-span-2 lg:col-span-1">
+            <div className="max-w-xl text-center mx-auto">
+              <div className="mb-5">
+                <h2 className="text-2xl font-bold md:text-3xl md:leading-tight dark:text-white mb-5">
                   Suscríbete a nuestra newsletter
                 </h2>
                 <p>
@@ -58,19 +58,19 @@ function Footer() {
                 </p>
               </div>
               <form>
-                <div class="mt-5 flex flex-col items-center gap-2 sm:flex-row sm:gap-3">
-                  <div class="w-full">
-                    <label for="hero-input" class="sr-only"></label>
+                <div className="mt-5 flex flex-col items-center gap-2 sm:flex-row sm:gap-3">
+                  <div className="w-full">
+                    <label for="hero-input" className="sr-only"></label>
                     <input
                       type="text"
                       id="hero-input"
                       name="hero-input"
-                      class="py-3 px-4 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600"
+                      className="py-3 px-4 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600"
                       placeholder="Email"
                     />
                   </div>
                   <a
-                    class="w-full sm:w-auto whitespace-nowrap py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none"
+                    className="w-full sm:w-auto whitespace-nowrap py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none"
                     href="#"
                   >
                     Suscríbete

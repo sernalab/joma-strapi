@@ -4,21 +4,25 @@
   "info": {
     "singularName": "vacante",
     "pluralName": "vacantes",
-    "displayName": "Vacantes"
+    "displayName": "Vacantes",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "Title": {
+    "title": {
       "type": "string"
     },
-    "Description": {
+    "description": {
       "type": "text"
     },
     "date": {
       "type": "date"
+    },
+    "shortDescription": {
+      "type": "text"
     }
   }
 }

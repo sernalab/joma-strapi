@@ -368,14 +368,16 @@ export interface ApiVacanteVacante extends Schema.CollectionType {
     singularName: 'vacante';
     pluralName: 'vacantes';
     displayName: 'Vacantes';
+    description: '';
   };
   options: {
     draftAndPublish: true;
   };
   attributes: {
-    Title: Attribute.String;
-    Description: Attribute.Text;
+    title: Attribute.String;
+    description: Attribute.Text;
     date: Attribute.Date;
+    shortDescription: Attribute.Text;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
