@@ -10,7 +10,7 @@ function Promotions() {
             <div class="group relative bg-gray-100 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300">
               <div class="absolute inset-0 bg-black bg-opacity-25 group-hover:bg-opacity-50 transition duration-300"></div>
               <img
-                src="https://images.unsplash.com/photo-1713008451062-69d80599b486?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                src="https://www.joma-tools.com/catalogo/951-large_default/supresor-de-picos-12-y-24-voltios-josp.jpg"
                 alt="Nombre del Producto"
                 class="w-full h-56 object-cover sm:h-72 md:h-96"
               />
@@ -37,7 +37,7 @@ function Promotions() {
             <div class="group relative bg-gray-100 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300">
               <div class="absolute inset-0 bg-black bg-opacity-25 group-hover:bg-opacity-50 transition duration-300"></div>
               <img
-                src="https://images.unsplash.com/photo-1713008451062-69d80599b486?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                src="https://www.joma-tools.com/catalogo/951-large_default/supresor-de-picos-12-y-24-voltios-josp.jpg"
                 alt="Nombre del Producto"
                 class="w-full h-56 object-cover sm:h-72 md:h-96"
               />
@@ -63,7 +63,7 @@ function Promotions() {
             <div class="group relative bg-gray-100 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300">
               <div class="absolute inset-0 bg-black bg-opacity-25 group-hover:bg-opacity-50 transition duration-300"></div>
               <img
-                src="https://images.unsplash.com/photo-1713008451062-69d80599b486?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                src="https://www.joma-tools.com/catalogo/951-large_default/supresor-de-picos-12-y-24-voltios-josp.jpg"
                 alt="Nombre del Producto"
                 class="w-full h-56 object-cover sm:h-72 md:h-96"
               />

@@ -7,7 +7,7 @@ function HomePage() {
     <>
       <Hero />
       <Features />
-      <Products />
+      {/* <Products /> */}
     </>
   );
 }

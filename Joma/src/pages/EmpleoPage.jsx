@@ -49,7 +49,7 @@ function Empleo() {
                 saber más sobre nuestra cultura de empresa.
               </p>
               <a
-                href="https://www.linkedin.com"
+                href="https://www.linkedin.com/company/joma-import-export/jobs/"
                 className="inline-block bg-joma-color p-3 text-white px-6 py-3 rounded transition-colors"
               >
                 Visitar LinkedIn
