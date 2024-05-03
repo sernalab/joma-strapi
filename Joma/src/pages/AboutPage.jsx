@@ -16,15 +16,6 @@ function AboutPage() {
                 calidad a precios competitivos, ideales para distribuidores que
                 proveen directamente a talleres mecánicos.
               </p>
-              <div class="mt-8">
-                <a
-                  href="#"
-                  class="text-blue-500 hover:text-blue-600 font-medium"
-                >
-                  Learn more about us
-                  <span class="ml-2">&#8594;</span>
-                </a>
-              </div>
             </div>
             <div>
               <img
@@ -54,15 +45,6 @@ function AboutPage() {
                 cuidadosamente diseñada para cumplir con las demandas del sector
                 automotriz moderno.
               </p>
-              <div class="mt-8">
-                <a
-                  href="#"
-                  class="text-blue-500 hover:text-blue-600 font-medium"
-                >
-                  Learn more about us
-                  <span class="ml-2">&#8594;</span>
-                </a>
-              </div>
             </div>
           </div>
           <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
@@ -77,15 +59,6 @@ function AboutPage() {
                 mínimo de compra. Esto te permite responder rápidamente a
                 cualquier necesidad urgente que pueda surgir en tu taller.
               </p>
-              <div class="mt-8">
-                <a
-                  href="#"
-                  class="text-blue-500 hover:text-blue-600 font-medium"
-                >
-                  Learn more about us
-                  <span class="ml-2">&#8594;</span>
-                </a>
-              </div>
             </div>
             <div>
               <img
@@ -114,15 +87,6 @@ function AboutPage() {
                 zona, garantizando un servicio personalizado y adaptado a tus
                 necesidades.
               </p>
-              <div class="mt-8">
-                <a
-                  href="#"
-                  class="text-blue-500 hover:text-blue-600 font-medium"
-                >
-                  Learn more about us
-                  <span class="ml-2">&#8594;</span>
-                </a>
-              </div>
             </div>
           </div>
         </div>
