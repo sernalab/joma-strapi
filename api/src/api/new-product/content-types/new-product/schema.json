@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "new_products",
+  "info": {
+    "singularName": "new-product",
+    "pluralName": "new-products",
+    "displayName": "NewProduct",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "reference": {
+      "type": "string"
+    },
+    "image": {
+      "type": "string"
+    }
+  }
+}
