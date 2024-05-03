@@ -13,3 +13,18 @@ export async function getJobs() {
     return [];
   }
 }
+
+export async function getNewProducts() {
+  try {
+    const response = await fetch(`${API_URL}/new-products`);
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+    const { data } = await response.json();
+    console.log(data);
+    return data;
+  } catch (error) {
+    console.log("Error al cargar las vacantes:", error);
+    return [];
+  }
+}
