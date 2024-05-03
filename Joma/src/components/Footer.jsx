@@ -16,32 +16,16 @@ function Footer() {
                   <a href="/about">Sobre nosotros</a>
                 </li>
                 <li className="mb-1">
-                  <a href="/envio">Envío</a>
-                </li>
-                <li className="mb-1">
-                  <a href="/payment">Pago</a>
-                </li>
-                <li className="mb-1">
                   <a href="/faq">Preguntas frecuentes</a>
                 </li>
                 <li className="mb-1">
-                  <a href="/empleo">Empleo</a>
+                  <a href="/empleo">Trabaja con nosotros</a>
+                </li>
+                <li className="mb-1">
+                  <a href="/map">¿Dónde estamos?</a>
                 </li>
                 <li className="mb-1">
                   <a href="/contact">Contacto</a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-          <div>
-            <h5 className="font-bold uppercase text-gray-600 mb-3">Legal</h5>
-            <nav>
-              <ul>
-                <li className="mb-1">
-                  <a href="/legal">Aviso legal</a>
-                </li>
-                <li className="mb-1">
-                  <a href="/terms">Términos y condiciones</a>
                 </li>
               </ul>
             </nav>

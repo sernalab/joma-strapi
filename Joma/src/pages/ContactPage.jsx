@@ -24,21 +24,21 @@ function Contact() {
                         <strong>Fax: </strong> 93 6831869
                       </li>
                       <li>
-                        <strong>Email: </strong>
-                        <a
-                          href="mailto:joma@joma-tools.com"
-                          class="underline text-blue-600 hover:text-blue-800"
-                        >
-                          joma@joma-tools.com
-                        </a>
-                      </li>
-                      <li>
                         <strong>Dirección: </strong> C/ Bages, 3 Nave 24 - Pol.
                         Can Prunera 08759 - Vallirana (Barcelona)
                       </li>
                       <li>
                         <strong>Posición GPS: </strong> Latitud 41º 22’ 22” N
                         Longitud 1º 54’ 31” E
+                      </li>
+                      <li>
+                        <strong>Ubicación: </strong>
+                        <a
+                          href="https://maps.app.goo.gl/hhLtDgh9KLDiuUJLA"
+                          target="_blank"
+                        >
+                          https://maps.app.goo.gl/hhLtDgh9KLDiuUJLA
+                        </a>
                       </li>
                     </ul>
                   </div>

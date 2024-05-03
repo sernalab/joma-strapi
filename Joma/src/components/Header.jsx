@@ -33,8 +33,8 @@ function Header() {
           <Link className="text-gray-600" to="/about" onClick={closeMenu}>
             Sobre Nosotros
           </Link>
-          <Link className="text-gray-600" to="/promotions" onClick={closeMenu}>
-            Promociones
+          <Link className="text-gray-600" to="/news" onClick={closeMenu}>
+            Novedades
           </Link>
           <Link className="text-gray-600" to="/videos" onClick={closeMenu}>
             Vídeos
@@ -98,12 +98,8 @@ function Header() {
             >
               Sobre Nosotros
             </Link>
-            <Link
-              className="text-gray-600 py-2"
-              to="/promotions"
-              onClick={closeMenu}
-            >
-              Promociones
+            <Link className="text-gray-600 py-2" to="/news" onClick={closeMenu}>
+              Novedades
             </Link>
             <Link
               className="text-gray-600 py-2"
