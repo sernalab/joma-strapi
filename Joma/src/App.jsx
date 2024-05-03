@@ -7,7 +7,7 @@ import Header from "./components/Header";
 import Home from "./pages/HomePage";
 import Footer from "./components/Footer";
 import CatalogoPage from "./pages/CatalogoPage";
-import ProductDetailPage from "./pages/ProductDetail";
+import ProductDetailPage from "./pages/ProductDetailPage";
 import AboutPage from "./pages/AboutPage";
 import NewsPage from "./pages/NewsPage";
 import VideosPage from "./pages/VideosPage";
