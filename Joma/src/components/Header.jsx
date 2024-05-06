@@ -127,13 +127,11 @@ function Header() {
             >
               Contacto
             </Link>
-            <Link
-              className="text-gray-600 py-2"
-              to="/empleo"
-              onClick={closeMenu}
-            >
-              Empleo
-            </Link>
+            {!loading && jobs.length > 0 && (
+              <Link className="text-gray-600" to="/empleo" onClick={closeMenu}>
+                Empleo
+              </Link>
+            )}
             <Link
               className="bg-joma-color rounded-md p-3 text-white py-2"
               to="/catalogo"
