@@ -65,7 +65,6 @@ function Empleo() {
               </a>
               .
             </p>
-            <p className="font-bold">joma@joma-tools.com</p>
           </div>
         </div>
       </section>

@@ -6,7 +6,20 @@ export default {
     "node_modules/preline/dist/*.js",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        "joma-blue": "#006ec7",
+      },
+      borderWidth: {
+        3: "3px",
+      },
+    },
+  },
+  variants: {
+    extend: {
+      backgroundColor: ["hover"],
+      textColor: ["hover"],
+    },
   },
   plugins: [require("preline/plugin")],
 };

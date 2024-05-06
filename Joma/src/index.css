@@ -83,6 +83,10 @@ button:focus-visible {
   color: #006ec7;
 }
 
+.joma-border {
+  border-color: #006ec7;
+}
+
 .bg-joma-color {
   background-color: #006ec7;
 }

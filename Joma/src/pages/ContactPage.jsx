@@ -36,8 +36,9 @@ function Contact() {
                         <a
                           href="https://maps.app.goo.gl/hhLtDgh9KLDiuUJLA"
                           target="_blank"
+                          className="fot-black underline"
                         >
-                          https://maps.app.goo.gl/hhLtDgh9KLDiuUJLA
+                          Mapa
                         </a>
                       </li>
                     </ul>
