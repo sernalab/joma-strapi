@@ -46,7 +46,7 @@ function Header() {
             Empleo
           </Link>
           <Link
-            className="bg-joma-color border border-joma-blue rounded-md p-3 text-white"
+            className="bg-joma-color border border-joma-blue rounded-md p-3 text-white hover:bg-white hover:text-gray-600"
             to="/catalogo"
             onClick={closeMenu}
           >
