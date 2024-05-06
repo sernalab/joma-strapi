@@ -140,7 +140,7 @@ function Header() {
               Catálogo
             </Link>
             <Link
-              className="text-gray-600 border border-joma-blue border-solid rounded-md p-3 hover:bg-joma-blue hover:text-white"
+              className="text-gray-600 border border-joma-blue border-solid rounded-md p-2 mt-1 hover:bg-joma-blue hover:text-white"
               to="/"
               onClick={closeMenu}
             >
