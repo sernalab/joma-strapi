@@ -34,7 +34,7 @@ function Header() {
 
         <div className="hidden sm:flex flex-grow items-center justify-end space-x-4">
           <Link className="text-gray-600" to="/about" onClick={closeMenu}>
-            Sobre Nosotros 1
+            Sobre Nosotros
           </Link>
           <Link className="text-gray-600" to="/news" onClick={closeMenu}>
             Novedades
