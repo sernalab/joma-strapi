@@ -1,43 +1,16 @@
-# FEATURES
+JOD03 -> Category 2???
 
-### +1000 Productos
+{
+"id_product": "28",
+"id_category": "10",
+"price": "100.000000",
+"reference": "ptt",
+"description": "Marcas ALFA ROMEO, CHEVROLET, CHRYSLER, CITROEN, FIAT, FORD, LANCIA, MAZDA, MITSUBISHI, OPEL, PEUGEOT, SUBARU, SUZUKI Modelos Fiat 500, 500C, 500L, 500L LIVING, 500L MPW, 500X, DOBLO, DOBLO CARGO, DOBLO WORK UP, FIORINO, GRANDE PUNTO, IDEA, LINEA, PANDA, PANDA CLASSIC, PUNTO , PUNTO EVO, PUNTO CLASSIC, QUBO, STRADA PICK UP, TIPO Alfa Romeo MITO Opel AGILA, ASTRA-H, ASTRA-J, COMBO-C, COMBO-D, CORSA-C, CORSA-D, MERIVA-A, MERIVA-B, TIGRA-B, ZAFIRA-B Mitsubishi CARISMA, GALANT, PAJERO, SIGMA, SPACE STAR, SPACE WAGON Citroën NEMO Lancia MUSA, YPSILON Suzuki IGNIS, SPLASH, SWIFT, WAGON R+ Chrysler YPSILON Chevrolet AVEO Mazda 323, 626, PREMACY Ford KA Peugeot BIPPER Subaru JUSTY G3X Motores 1.3 JTD, MULTIJET, CDTi, TDCi, DT, DTE5, VCDi, HDi, DDiS Códigos de Motor 1.3 330A1.000, 199A3.000, 199B1.000, 199B4.000, 199B8.000, 955B2.000, LDV/A13DTC, LSF/A13DTR, 199B1.000, FHZ (F13DTE5), 55266963, 55283775, 169A1.000, 169A5.000, 188A8.000, 188A9.000, 199A2.000, 199A3.000, 199A9.000, 199B1.000, 199B2.000, 199B4.000, 199B8.000, 223A9.000, 225A2.000, 263A2.000, 263A6.000, 312A8.000, 312B1.000, 312B2.000, 312B5.000, 330A1.000, 843A2.000, 955B2.000, 169A1.000 (FD4), BAAA, BAAB, 188A9.000, 199A2.000, 199A3.000, 199A9.000, 199B1.000, 843A2.000, A13DTC, A13DTE, A13DTR, D13A, LDV/A13DTC, LSF/A13DTE, Y13DT, Y13DTH, Z13DT, Z13DTE, Z13DTH, Z13DTI, Z13DTJ, Z13DTR, F13DTE5 (FHZ), Z13DT, D13A, D13AA, Z13DT, Z13DTJ OEM EN-46781, 303-1472, 303-1468, 09917-68610, 1860985000, 1870900300, 1870900400, 1871000900 ",
+"short_description": " 1.3 JTD, MULTIJET, CDTi, TDCi, DT, DTE5, VCDi, HDi, DDiS",
+"image_link": "https://www.joma-tools.com/catalogo/img/cms/GR+Ca+Co_1.jpg",
+"name": "PRUEBAS Kit calado distribuciones"
+},
 
-"Amplio catálogo con más de mil productos especializados para todas tus necesidades automotrices."
+      PPT????
 
-### Envío en 48h
 
-"Compromiso de entrega rápida con envíos en menos de 48 horas."
-
-### Atención Personalizada
-
-"Servicio al cliente personalizado para ayudarte a encontrar exactamente lo que necesitas."
-
-### Calidad Garantizada
-
-"Solo productos de alta calidad probados y garantizados para rendir al máximo."
-
-### Asesoramiento Técnico
-
-"Expertos en automoción disponibles para ofrecer asesoramiento técnico y soporte."
-
-### Partes Únicas y Especiales
-
-"Acceso a herramientas y partes únicas que no encontrarás en otros proveedores."
-
-### Ofertas y Promociones
-
-"Descuentos regulares y ofertas especiales para nuestros clientes leales."
-
-### Compatibilidad Asegurada
-
-"Aseguramos la compatibilidad de nuestros recambios con una amplia gama de modelos de vehículos."
-
-### Compromiso con la Innovación
-
-"Constantemente actualizando nuestro inventario con las últimas innovaciones en el sector de herramientas automotrices."
-
-### Fácil Devolución
-
-"Proceso de devolución sencillo y sin complicaciones para garantizar tu satisfacción."
-
----
