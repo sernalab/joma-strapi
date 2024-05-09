@@ -1,7 +1,7 @@
 import React, { createContext, useContext, useState, useEffect } from "react";
 import { getJobs } from "./api";
 
-const JobsContext = createContext();
+const JobsContext = createContext(null);
 
 export function useJobs() {
   return useContext(JobsContext);
