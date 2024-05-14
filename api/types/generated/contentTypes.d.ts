@@ -590,6 +590,37 @@ export interface PluginContentReleasesReleaseAction
   };
 }
 
+export interface PluginChartbrewChartbrew extends Schema.SingleType {
+  collectionName: 'chartbrews';
+  info: {
+    singularName: 'chartbrew';
+    pluralName: 'chartbrews';
+    displayName: 'Chartbrew';
+  };
+  options: {
+    draftAndPublish: false;
+    comment: '';
+  };
+  attributes: {
+    host: Attribute.String & Attribute.Required;
+    token: Attribute.String & Attribute.Required;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'plugin::chartbrew.chartbrew',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'plugin::chartbrew.chartbrew',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 export interface PluginI18NLocale extends Schema.CollectionType {
   collectionName: 'i18n_locale';
   info: {
@@ -805,7 +836,7 @@ export interface ApiCategoryCategory extends Schema.CollectionType {
     id_category: Attribute.Integer;
     menu: Attribute.Relation<
       'api::category.category',
-      'oneToOne',
+      'manyToOne',
       'api::menu.menu'
     >;
     createdAt: Attribute.DateTime;
@@ -867,12 +898,18 @@ export interface ApiMenuMenu extends Schema.CollectionType {
     singularName: 'menu';
     pluralName: 'menus';
     displayName: 'Menu';
+    description: '';
   };
   options: {
     draftAndPublish: true;
   };
   attributes: {
     title: Attribute.String;
+    categories: Attribute.Relation<
+      'api::menu.menu',
+      'oneToMany',
+      'api::category.category'
+    >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -1041,6 +1078,7 @@ declare module '@strapi/types' {
       'plugin::upload.folder': PluginUploadFolder;
       'plugin::content-releases.release': PluginContentReleasesRelease;
       'plugin::content-releases.release-action': PluginContentReleasesReleaseAction;
+      'plugin::chartbrew.chartbrew': PluginChartbrewChartbrew;
       'plugin::i18n.locale': PluginI18NLocale;
       'plugin::users-permissions.permission': PluginUsersPermissionsPermission;
       'plugin::users-permissions.role': PluginUsersPermissionsRole;
