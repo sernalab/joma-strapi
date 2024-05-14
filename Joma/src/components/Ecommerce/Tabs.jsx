@@ -8,9 +8,13 @@ function Tabs({ menuItems }) {
     ) {
       window.HSStaticMethods.autoInit();
     }
+    const tabs = document.querySelectorAll(".hs-tab-active");
+    tabs.forEach((tab) => {
+      tab.classList.remove("hs-tab-active");
+    });
   }, [location.pathname]);
   return (
-    <div className="mt-10">
+    <div className="my-7">
       <nav
         className="relative z-0 flex border rounded-xl overflow-hidden"
         aria-label="Tabs"
