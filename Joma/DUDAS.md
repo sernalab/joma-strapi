@@ -13,4 +13,40 @@ JOD03 -> Category 2???
 
       PPT????
 
+"62": {
+"id": 62,
+"name": "Herramientas de corte",
+"description": null,
+"id_category": 66,
+"createdAt": "2024-05-08T11:40:59.243Z",
+"updatedAt": "2024-05-08T13:56:35.278Z",
+"publishedAt": "2024-05-08T16:51:44.175Z",
+"createdBy": null,
+"updatedBy": null
+},
 
+                  hay dos
+
+                  			"86": {
+    			"id": 86,
+    			"name": "Herramientas de corte",
+    			"description": null,
+    			"id_category": 90,
+    			"createdAt": "2024-05-08T11:45:25.264Z",
+    			"updatedAt": "2024-05-08T13:56:35.304Z",
+    			"publishedAt": "2024-05-08T16:51:44.175Z",
+    			"createdBy": null,
+    			"updatedBy": null
+    		},
+
+
+    {
+      "id_category": "92",
+      "name": "Juegos de puntas / vasos",
+      "description": ""
+    },
+
+    no existe en menu de joma
+
+els usuaris poden veure el pedido desde la web?
+Els distribuidors han de poder pagar desde la web? o senvia

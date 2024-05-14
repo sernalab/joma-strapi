@@ -52,8 +52,8 @@ function App() {
               <Route path="/map" element={<MapPage />} />
             </Routes>
           </div>
-          <Footer />
         </main>
+        <Footer />
       </JobsProvider>
     </>
   );

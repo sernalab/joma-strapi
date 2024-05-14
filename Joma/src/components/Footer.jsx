@@ -12,20 +12,30 @@ function Footer() {
             </h5>
             <nav>
               <ul>
-                <li className="mb-1 hover:underline">
-                  <a href="/about">Sobre nosotros</a>
+                <li className="mb-1">
+                  <a className="hover:underline" href="/about">
+                    Sobre nosotros
+                  </a>
                 </li>
-                <li className="mb-1 hover:underline">
-                  <a href="/faq">Preguntas frecuentes</a>
+                <li className="mb-1">
+                  <a className="hover:underline" href="/faq">
+                    Preguntas frecuentes
+                  </a>
                 </li>
-                <li className="mb-1 hover:underline">
-                  <a href="/empleo">Trabaja con nosotros</a>
+                <li className="mb-1">
+                  <a className="hover:underline" href="/empleo">
+                    Trabaja con nosotros
+                  </a>
                 </li>
-                <li className="mb-1 hover:underline">
-                  <a href="/map">¿Dónde estamos?</a>
+                <li className="mb-1">
+                  <a className="hover:underline" href="/map">
+                    ¿Dónde estamos?
+                  </a>
                 </li>
-                <li className="mb-1 hover:underline">
-                  <a href="/contact">Contacto</a>
+                <li className="mb-1">
+                  <a className="hover:underline" href="/contact">
+                    Contacto
+                  </a>
                 </li>
               </ul>
             </nav>
