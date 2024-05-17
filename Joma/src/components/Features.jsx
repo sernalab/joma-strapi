@@ -2,15 +2,14 @@ function Features() {
   return (
     <>
       <section className="max-w-screen-xl mx-auto p-4 md:p-8 lg:p-12 text-center">
-        <h5 className="joma-color font-bold mb-7">Features</h5>
         <h2 className="text-4xl font-bold text-gray-600 mb-7">
-          Amazing <span className="joma-color font-bold">features</span>
+          Caracteísticas{" "}
+          <span className="joma-color font-bold">destacadas</span>
         </h2>
         <p className="font-medium leading-loose text-gray-600 mb-10 lg:mb-24">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil
-          placeat maiores dolore. Et, enim sunt! Provident reiciendis vitae
-          dolorem, temporibus vel enim tenetur explicabo laborum obcaecati
-          adipisci nesciunt a commodi.
+          Proporcionamos herramientas y recambios automotrices de calidad
+          superior. Nuestro compromiso es satisfacer las demandas del sector con
+          productos confiables y un servicio de calidad.
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 text-left">
           <div className="flex py-5">
@@ -31,9 +30,11 @@ function Features() {
               </svg>
             </span>
             <div className="info ml-5">
-              <h3 className="text-2xl font-bold">+1000 productos</h3>
-              <p className="mt-2 font-medium leading-loose text-gray-600 text-gray-600">
-                text
+              <h3 className="text-2xl font-bold">+500 productos</h3>
+              <p className="mt-2 font-medium leading-loose text-gray-600">
+                Contamos con un extenso catálogo de más de 500 productos,
+                cubriendo todas tus necesidades en herramientas y recambios
+                automotrices.
               </p>
             </div>
           </div>
@@ -58,9 +59,10 @@ function Features() {
               </svg>
             </div>
             <div className="info ml-5">
-              <h3 className="text-2xl font-bold">Envio en 48h</h3>
+              <h3 className="text-2xl font-bold">Envío en 24h</h3>
               <p className="mt-2 font-medium leading-loose text-gray-600">
-                Enviamos bla bla. Para más información visita la pagina de envio
+                Garantizamos que tu pedido llegará en un máximo de 24 horas,
+                asegurando que tus operaciones no se detengan.
               </p>
             </div>
           </div>
@@ -85,7 +87,7 @@ function Features() {
               </svg>
             </span>
             <div className="info ml-5">
-              <h3 className="text-2xl font-bold">+100 Clientes</h3>
+              <h3 className="text-2xl font-bold">+XXXX Clientes</h3>
               <p className="mt-2 font-medium leading-loose text-gray-600">
                 Enviamos bla bla. Para más información visita la pagina de envio
               </p>
@@ -109,9 +111,10 @@ function Features() {
               </svg>
             </span>
             <div className="info ml-5">
-              <h3 className="text-2xl font-bold">+1000 productos</h3>
+              <h3 className="text-2xl font-bold">Precios Competitivos</h3>
               <p className="mt-2 font-medium leading-loose text-gray-600">
-                text
+                Nos esforzamos por ofrecer los precios más competitivos del
+                mercado sin comprometer la calidad de nuestros productos.
               </p>
             </div>
           </div>
@@ -136,9 +139,10 @@ function Features() {
               </svg>
             </div>
             <div className="info ml-5">
-              <h3 className="text-2xl font-bold">Envio en 48h</h3>
+              <h3 className="text-2xl font-bold">Atención Personalizada</h3>
               <p className="mt-2 font-medium leading-loose text-gray-600">
-                Enviamos bla bla. Para más información visita la pagina de envio
+                Brindamos asesoría y soporte técnico especializado para cada uno
+                de tus pedidos.
               </p>
             </div>
           </div>
@@ -163,9 +167,10 @@ function Features() {
               </svg>
             </span>
             <div className="info ml-5">
-              <h3 className="text-2xl font-bold">+100 Clientes</h3>
+              <h3 className="text-2xl font-bold">Calidad Garantizada</h3>
               <p className="mt-2 font-medium leading-loose text-gray-600">
-                Enviamos bla bla. Para más información visita la pagina de envio
+                Todos nuestros productos están respaldados por una garantía de
+                calidad, asegurando su durabilidad y rendimiento óptimo.
               </p>
             </div>
           </div>

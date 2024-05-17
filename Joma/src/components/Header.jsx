@@ -50,16 +50,23 @@ function Header() {
               Empleo
             </Link>
           )}
-          <Link
+          {/* <Link
             className="bg-joma-color border border-joma-blue rounded-md p-3 text-white hover:bg-white hover:text-gray-600"
             to="/catalogo"
+            onClick={closeMenu}
+          >
+            Catálogo
+          </Link> */}
+          <Link
+            className="bg-joma-color border border-joma-blue rounded-md p-3 text-white hover:bg-white hover:text-gray-600"
+            to="https://www.joma-tools.com/catalogo/"
             onClick={closeMenu}
           >
             Catálogo
           </Link>
           <Link
             className="text-gray-600 border border-joma-blue border-solid rounded-md p-3 hover:bg-joma-blue hover:text-white"
-            to="/"
+            to="/export"
             onClick={closeMenu}
           >
             Export
@@ -134,14 +141,14 @@ function Header() {
             )}
             <Link
               className="bg-joma-color rounded-md p-3 text-white py-2"
-              to="/catalogo"
+              to="https://www.joma-tools.com/catalogo/"
               onClick={closeMenu}
             >
               Catálogo
             </Link>
             <Link
               className="text-gray-600 border border-joma-blue border-solid rounded-md p-2 mt-1 hover:bg-joma-blue hover:text-white"
-              to="/"
+              to="/export"
               onClick={closeMenu}
             >
               Export

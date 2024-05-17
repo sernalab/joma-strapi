@@ -5,6 +5,7 @@ import { JobsProvider } from "./config/JobsContext.jsx";
 import "preline/preline";
 
 import Header from "./components/Header";
+import EnHeader from "./components/EnHeader.jsx";
 import Home from "./pages/HomePage";
 import Footer from "./components/Footer";
 import CatalogoPage from "./pages/CatalogoPage";
@@ -18,6 +19,7 @@ import ContactPage from "./pages/ContactPage";
 import EnvioPage from "./pages/FooterPages/EnvioPage";
 import PaymentPage from "./pages/FooterPages/PaymentPage";
 import MapPage from "./pages/FooterPages/MapPage";
+import ExportPage from "./pages/ExportPage.jsx";
 
 function App() {
   const location = useLocation();
@@ -31,10 +33,12 @@ function App() {
     }
   }, [location.pathname]);
 
+  const isExportPage = location.pathname === "/export";
+
   return (
     <>
       <JobsProvider>
-        <Header />
+        {isExportPage ? <EnHeader /> : <Header />}
         <main>
           <div className="routes-container">
             <Routes>
@@ -49,6 +53,7 @@ function App() {
               <Route path="/contact" element={<ContactPage />} />
               <Route path="/envio" element={<EnvioPage />} />
               <Route path="/payment" element={<PaymentPage />} />
+              <Route path="/export" element={<ExportPage />} />
               <Route path="/map" element={<MapPage />} />
             </Routes>
           </div>
