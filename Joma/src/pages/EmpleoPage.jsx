@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { getJobs } from "../config/api";
+import { getJobs } from "../services/api";
 import JobCard from "../components/JobCard";
 
 function Empleo() {

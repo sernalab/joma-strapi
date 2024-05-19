@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react";
 import {
-  getCategories,
-  getMenu,
   getProducts,
   getProductsByCategory,
-} from "../config/api";
+} from "../services/productServices";
+
+import { getCategories, getMenu } from "../services/api";
 
 import ProductsMenu from "../components/Ecommerce/ProductsMenu";
 import ProductCarouselComponent from "../components/ProductCarousel";

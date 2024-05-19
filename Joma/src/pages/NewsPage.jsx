@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { getNewProducts } from "../config/api";
+import { getNewProducts } from "../services/productServices";
 import NewProductCard from "../components/NewProductCard";
 
 function NewsPage() {

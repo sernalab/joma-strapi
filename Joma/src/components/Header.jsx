@@ -42,6 +42,9 @@ function Header() {
           <Link className="text-gray-600" to="/videos" onClick={closeMenu}>
             Vídeos
           </Link>
+          <Link className="text-gray-600" to="/blog" onClick={closeMenu}>
+            Blog
+          </Link>
           <Link className="text-gray-600" to="/contact" onClick={closeMenu}>
             Contacto
           </Link>

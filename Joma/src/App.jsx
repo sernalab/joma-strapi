@@ -20,6 +20,8 @@ import EnvioPage from "./pages/FooterPages/EnvioPage";
 import PaymentPage from "./pages/FooterPages/PaymentPage";
 import MapPage from "./pages/FooterPages/MapPage";
 import ExportPage from "./pages/ExportPage.jsx";
+import BlogListPage from "./pages/BlogListPage.jsx";
+import BlogDetailPage from "./pages/BlogDetailPage.jsx";
 
 function App() {
   const location = useLocation();
@@ -55,6 +57,8 @@ function App() {
               <Route path="/payment" element={<PaymentPage />} />
               <Route path="/export" element={<ExportPage />} />
               <Route path="/map" element={<MapPage />} />
+              <Route path="/blog" element={<BlogListPage />} />
+              <Route path="/blog/:id" element={<BlogDetailPage />} />
             </Routes>
           </div>
         </main>

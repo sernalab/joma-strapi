@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-import { getFeaturedProducts } from "../../config/api";
+import { getFeaturedProducts } from "../../services/productServices";
 
 import Card from "./Card";
 
