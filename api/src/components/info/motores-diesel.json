@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_info_motores_diesels",
+  "info": {
+    "displayName": "Motores Diesel"
+  },
+  "options": {},
+  "attributes": {
+    "size": {
+      "type": "json"
+    },
+    "codes": {
+      "type": "json"
+    }
+  }
+}

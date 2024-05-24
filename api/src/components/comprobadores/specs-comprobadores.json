@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_comprobadores_specs_comprobadores",
+  "info": {
+    "displayName": "Specs Comprobadores"
+  },
+  "options": {},
+  "attributes": {
+    "rangoPresion": {
+      "type": "string"
+    },
+    "rangoDepresion": {
+      "type": "string"
+    },
+    "resolucion": {
+      "type": "string"
+    },
+    "precision": {
+      "type": "string"
+    }
+  }
+}

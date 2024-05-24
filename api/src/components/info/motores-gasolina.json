@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_info_motores_gasolinas",
+  "info": {
+    "displayName": "Motores Gasolina"
+  },
+  "options": {},
+  "attributes": {
+    "size": {
+      "type": "json"
+    },
+    "codes": {
+      "type": "json"
+    }
+  }
+}

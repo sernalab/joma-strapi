@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_image_diesel_correa_images",
+  "info": {
+    "displayName": "Diesel Correa Image"
+  },
+  "options": {},
+  "attributes": {
+    "url": {
+      "type": "string"
+    },
+    "alt": {
+      "type": "string"
+    }
+  }
+}

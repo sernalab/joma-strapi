@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_basic_info_basic_infos",
+  "info": {
+    "displayName": "Basic Info",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "isPremium": {
+      "type": "boolean"
+    },
+    "name": {
+      "type": "string"
+    },
+    "reference": {
+      "type": "string",
+      "required": true
+    },
+    "id_product": {
+      "type": "integer"
+    },
+    "price": {
+      "type": "decimal"
+    }
+  }
+}

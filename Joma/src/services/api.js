@@ -21,6 +21,8 @@ export async function getCategories() {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
     const { data } = await response.json();
+    console.log("getCategories", data);
+
     return data;
   } catch (error) {
     console.log("Error al cargar las vacantes:", error);
@@ -35,6 +37,7 @@ export async function getMenu() {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
     const { data } = await response.json();
+    console.log("getMenu", data);
     return data;
   } catch (error) {
     console.log("Error al cargar las vacantes:", error);

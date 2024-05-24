@@ -41,9 +41,11 @@ function CatalogoPage() {
     setSelectedMenu(event.target.value);
   };
 
-  const handleCategoryClick = async (id_category) => {
+  const handleCategoryClick = async (categoryId) => {
+    console.log("Category ID:", categoryId);
     try {
-      const products = await getProductsByCategory(id_category);
+      const products = await getProductsByCategory(categoryId);
+      console.log("Fetched Products:", products); // Verifica los productos aquí
       setSelectedCategoryProducts(products);
     } catch (error) {
       console.log("ERROR FETCHING PRODUCTS BY CATEGORY", error);
@@ -85,7 +87,7 @@ function CatalogoPage() {
                     href="#"
                     onClick={(e) => {
                       e.preventDefault();
-                      handleCategoryClick(category.attributes.id_category);
+                      handleCategoryClick(category.id);
                     }}
                   >
                     {category.attributes.name}
@@ -100,7 +102,14 @@ function CatalogoPage() {
             <h2 className="font-bold">Productos</h2>
             <ul>
               {selectedCategoryProducts.map((product) => (
-                <li key={product.id}>{product.attributes.name}</li>
+                <li key={product.id}>
+                  {product.attributes.basicInfo.map((info) => (
+                    <div key={info.id}>
+                      <strong>{info.name}</strong>
+                      <p>{info.description}</p>
+                    </div>
+                  ))}
+                </li>
               ))}
             </ul>
           </div>

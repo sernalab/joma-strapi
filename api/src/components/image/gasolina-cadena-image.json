@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_image_gasolina_cadena_images",
+  "info": {
+    "displayName": "Gasolina Cadena Image"
+  },
+  "options": {},
+  "attributes": {
+    "url": {
+      "type": "string"
+    },
+    "alt": {
+      "type": "string"
+    }
+  }
+}

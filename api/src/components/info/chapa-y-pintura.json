@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_info_chapa_y_pinturas",
+  "info": {
+    "displayName": "Chapa y Pintura",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "presion": {
+      "type": "json"
+    },
+    "medida": {
+      "type": "json"
+    }
+  }
+}

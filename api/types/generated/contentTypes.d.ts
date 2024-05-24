@@ -869,7 +869,6 @@ export interface ApiCategoryCategory extends Schema.CollectionType {
   attributes: {
     name: Attribute.String;
     description: Attribute.Text;
-    id_category: Attribute.Integer;
     menu: Attribute.Relation<
       'api::category.category',
       'manyToOne',
@@ -1002,19 +1001,34 @@ export interface ApiProductProduct extends Schema.CollectionType {
     draftAndPublish: true;
   };
   attributes: {
-    reference: Attribute.String;
-    id_product: Attribute.Integer;
-    id_category: Attribute.Integer;
-    price: Attribute.Decimal;
     category: Attribute.Relation<
       'api::product.product',
       'oneToOne',
       'api::category.category'
     >;
-    description: Attribute.Text;
-    short_description: Attribute.String;
-    image_link: Attribute.String;
-    name: Attribute.String;
+    codigosMotor: Attribute.Component<'info.codigo-motor', true>;
+    basicInfo: Attribute.Component<'basic-info.basic-info', true>;
+    comprobadoresInfo: Attribute.Component<
+      'comprobadores.specs-comprobadores',
+      true
+    >;
+    imageDieselCadena: Attribute.Component<'image.diesel-cadena-image', true>;
+    imageDieselCorrea: Attribute.Component<'image.diesel-correa-image', true>;
+    imageGasolinaCadena: Attribute.Component<
+      'image.gasolina-cadena-image',
+      true
+    >;
+    imageGasolinaCorrea: Attribute.Component<
+      'image.gasolina-correa-image',
+      true
+    >;
+    imagePremium: Attribute.Component<'image.image-premium'>;
+    imagesProduct: Attribute.Component<'image.product-images', true>;
+    infoChapaPintura: Attribute.Component<'info.chapa-y-pintura', true>;
+    infoMotor: Attribute.Component<'info.codigo-motor', true>;
+    infoDiagnosis: Attribute.Component<'info.diagnosis', true>;
+    infoElectricidad: Attribute.Component<'info.electricidad', true>;
+    description: Attribute.Component<'description.content-product', true>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

@@ -2,7 +2,9 @@ const API_URL = import.meta.env.VITE_API_URL;
 
 export async function getProducts() {
   try {
-    const response = await fetch(`${API_URL}/products`);
+    const response = await fetch(
+      `${API_URL}/products?populate=*&pagination[pageSize]=100`
+    );
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
@@ -15,11 +17,16 @@ export async function getProducts() {
   }
 }
 
-export async function getProductsByCategory(id_category) {
+export async function getProductsByCategory(categoryId) {
   try {
     const response = await fetch(
-      `${API_URL}/products?populate=category&filters[id_category][$eq]=${id_category}&pagination[pageSize]=100`
+      `${API_URL}/products?populate=*&filters[category][id][$eq]=${categoryId}&pagination[pageSize]=100`
     );
+    console.log(
+      "API URL:",
+      `${API_URL}/products?populate=*&filters[category][id][$eq]=${categoryId}&pagination[pageSize]=100`
+    );
+
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
@@ -30,6 +37,7 @@ export async function getProductsByCategory(id_category) {
     return [];
   }
 }
+
 export async function getNewProducts() {
   try {
     const response = await fetch(`${API_URL}/new-products`);
@@ -37,7 +45,6 @@ export async function getNewProducts() {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
     const { data } = await response.json();
-    console.log(data);
     return data;
   } catch (error) {
     console.log("Error al cargar las vacantes:", error);

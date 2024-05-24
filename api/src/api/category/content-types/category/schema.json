@@ -18,9 +18,6 @@
     "description": {
       "type": "text"
     },
-    "id_category": {
-      "type": "integer"
-    },
     "menu": {
       "type": "relation",
       "relation": "manyToOne",

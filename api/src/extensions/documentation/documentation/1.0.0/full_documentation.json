@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2024-05-18T16:55:20.549Z"
+    "x-generation-date": "2024-05-24T11:28:06.948Z"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -894,9 +894,6 @@
               "description": {
                 "type": "string"
               },
-              "id_category": {
-                "type": "integer"
-              },
               "menu": {
                 "oneOf": [
                   {
@@ -967,9 +964,6 @@
           "description": {
             "type": "string"
           },
-          "id_category": {
-            "type": "integer"
-          },
           "menu": {
             "type": "object",
             "properties": {
@@ -1004,9 +998,6 @@
                                     },
                                     "description": {
                                       "type": "string"
-                                    },
-                                    "id_category": {
-                                      "type": "integer"
                                     },
                                     "menu": {
                                       "type": "object",
@@ -1962,9 +1953,6 @@
                         "description": {
                           "type": "string"
                         },
-                        "id_category": {
-                          "type": "integer"
-                        },
                         "menu": {
                           "type": "object",
                           "properties": {
@@ -2844,19 +2832,6 @@
           "data": {
             "type": "object",
             "properties": {
-              "reference": {
-                "type": "string"
-              },
-              "id_product": {
-                "type": "integer"
-              },
-              "id_category": {
-                "type": "integer"
-              },
-              "price": {
-                "type": "number",
-                "format": "float"
-              },
               "category": {
                 "oneOf": [
                   {
@@ -2868,17 +2843,86 @@
                 ],
                 "example": "string or id"
               },
+              "codigosMotor": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/InfoCodigoMotorComponent"
+                }
+              },
+              "basicInfo": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/BasicInfoBasicInfoComponent"
+                }
+              },
+              "comprobadoresInfo": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/ComprobadoresSpecsComprobadoresComponent"
+                }
+              },
+              "imageDieselCadena": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/ImageDieselCadenaImageComponent"
+                }
+              },
+              "imageDieselCorrea": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/ImageDieselCorreaImageComponent"
+                }
+              },
+              "imageGasolinaCadena": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/ImageGasolinaCadenaImageComponent"
+                }
+              },
+              "imageGasolinaCorrea": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/ImageGasolinaCorreaImageComponent"
+                }
+              },
+              "imagePremium": {
+                "$ref": "#/components/schemas/ImageImagePremiumComponent"
+              },
+              "imagesProduct": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/ImageProductImagesComponent"
+                }
+              },
+              "infoChapaPintura": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/InfoChapaYPinturaComponent"
+                }
+              },
+              "infoMotor": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/InfoCodigoMotorComponent"
+                }
+              },
+              "infoDiagnosis": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/InfoDiagnosisComponent"
+                }
+              },
+              "infoElectricidad": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/InfoElectricidadComponent"
+                }
+              },
               "description": {
-                "type": "string"
-              },
-              "short_description": {
-                "type": "string"
-              },
-              "image_link": {
-                "type": "string"
-              },
-              "name": {
-                "type": "string"
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/DescriptionContentProductComponent"
+                }
               }
             }
           }
@@ -2933,19 +2977,6 @@
       "Product": {
         "type": "object",
         "properties": {
-          "reference": {
-            "type": "string"
-          },
-          "id_product": {
-            "type": "integer"
-          },
-          "id_category": {
-            "type": "integer"
-          },
-          "price": {
-            "type": "number",
-            "format": "float"
-          },
           "category": {
             "type": "object",
             "properties": {
@@ -2963,9 +2994,6 @@
                       },
                       "description": {
                         "type": "string"
-                      },
-                      "id_category": {
-                        "type": "integer"
                       },
                       "menu": {
                         "type": "object",
@@ -3358,17 +3386,86 @@
               }
             }
           },
+          "codigosMotor": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/InfoCodigoMotorComponent"
+            }
+          },
+          "basicInfo": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/BasicInfoBasicInfoComponent"
+            }
+          },
+          "comprobadoresInfo": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ComprobadoresSpecsComprobadoresComponent"
+            }
+          },
+          "imageDieselCadena": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ImageDieselCadenaImageComponent"
+            }
+          },
+          "imageDieselCorrea": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ImageDieselCorreaImageComponent"
+            }
+          },
+          "imageGasolinaCadena": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ImageGasolinaCadenaImageComponent"
+            }
+          },
+          "imageGasolinaCorrea": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ImageGasolinaCorreaImageComponent"
+            }
+          },
+          "imagePremium": {
+            "$ref": "#/components/schemas/ImageImagePremiumComponent"
+          },
+          "imagesProduct": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ImageProductImagesComponent"
+            }
+          },
+          "infoChapaPintura": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/InfoChapaYPinturaComponent"
+            }
+          },
+          "infoMotor": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/InfoCodigoMotorComponent"
+            }
+          },
+          "infoDiagnosis": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/InfoDiagnosisComponent"
+            }
+          },
+          "infoElectricidad": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/InfoElectricidadComponent"
+            }
+          },
           "description": {
-            "type": "string"
-          },
-          "short_description": {
-            "type": "string"
-          },
-          "image_link": {
-            "type": "string"
-          },
-          "name": {
-            "type": "string"
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/DescriptionContentProductComponent"
+            }
           },
           "createdAt": {
             "type": "string",
@@ -3437,6 +3534,244 @@
           },
           "meta": {
             "type": "object"
+          }
+        }
+      },
+      "InfoCodigoMotorComponent": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "number"
+          },
+          "marcas": {},
+          "modelos": {},
+          "motoresDiesel": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "number"
+              },
+              "size": {},
+              "codes": {}
+            }
+          },
+          "motoresGasolina": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "number"
+              },
+              "size": {},
+              "codes": {}
+            }
+          },
+          "infoAdicional": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "number"
+              },
+              "years": {
+                "type": "string"
+              },
+              "combustible": {},
+              "tipo": {
+                "type": "string"
+              }
+            }
+          },
+          "OEM": {}
+        }
+      },
+      "BasicInfoBasicInfoComponent": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "number"
+          },
+          "isPremium": {
+            "type": "boolean"
+          },
+          "name": {
+            "type": "string"
+          },
+          "reference": {
+            "type": "string"
+          },
+          "id_product": {
+            "type": "integer"
+          },
+          "price": {
+            "type": "number",
+            "format": "float"
+          }
+        }
+      },
+      "ComprobadoresSpecsComprobadoresComponent": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "number"
+          },
+          "rangoPresion": {
+            "type": "string"
+          },
+          "rangoDepresion": {
+            "type": "string"
+          },
+          "resolucion": {
+            "type": "string"
+          },
+          "precision": {
+            "type": "string"
+          }
+        }
+      },
+      "ImageDieselCadenaImageComponent": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "number"
+          },
+          "url": {
+            "type": "string"
+          },
+          "alt": {
+            "type": "string"
+          }
+        }
+      },
+      "ImageDieselCorreaImageComponent": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "number"
+          },
+          "url": {
+            "type": "string"
+          },
+          "alt": {
+            "type": "string"
+          }
+        }
+      },
+      "ImageGasolinaCadenaImageComponent": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "number"
+          },
+          "url": {
+            "type": "string"
+          },
+          "alt": {
+            "type": "string"
+          }
+        }
+      },
+      "ImageGasolinaCorreaImageComponent": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "number"
+          },
+          "url": {
+            "type": "string"
+          },
+          "alt": {
+            "type": "string"
+          }
+        }
+      },
+      "ImageImagePremiumComponent": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "number"
+          },
+          "url": {
+            "type": "string"
+          },
+          "alt": {
+            "type": "string"
+          }
+        }
+      },
+      "ImageProductImagesComponent": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "number"
+          },
+          "url": {
+            "type": "string"
+          },
+          "alt": {
+            "type": "string"
+          }
+        }
+      },
+      "InfoChapaYPinturaComponent": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "number"
+          },
+          "presion": {},
+          "medida": {}
+        }
+      },
+      "InfoDiagnosisComponent": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "number"
+          },
+          "novedades": {
+            "type": "string"
+          },
+          "medidas": {
+            "type": "string"
+          },
+          "codigo": {
+            "type": "string"
+          },
+          "validez": {
+            "type": "string"
+          },
+          "tipo": {
+            "type": "string"
+          },
+          "rango": {
+            "type": "string"
+          }
+        }
+      },
+      "InfoElectricidadComponent": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "number"
+          },
+          "code": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          }
+        }
+      },
+      "DescriptionContentProductComponent": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "number"
+          },
+          "title": {
+            "type": "string"
+          },
+          "content": {
+            "type": "string"
           }
         }
       },

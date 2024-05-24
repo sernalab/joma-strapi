@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_codigo_motor_codigo_motors",
+  "info": {
+    "displayName": "Motor",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "marcas": {
+      "type": "json"
+    },
+    "modelos": {
+      "type": "json"
+    },
+    "motoresDiesel": {
+      "type": "component",
+      "repeatable": false,
+      "component": "info.motores-diesel"
+    },
+    "motoresGasolina": {
+      "type": "component",
+      "repeatable": false,
+      "component": "info.motores-gasolina"
+    },
+    "infoAdicional": {
+      "type": "component",
+      "repeatable": false,
+      "component": "info.info-adicional-motores"
+    },
+    "OEM": {
+      "type": "json"
+    }
+  }
+}

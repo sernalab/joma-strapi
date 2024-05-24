@@ -12,34 +12,80 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "reference": {
-      "type": "string"
-    },
-    "id_product": {
-      "type": "integer"
-    },
-    "id_category": {
-      "type": "integer"
-    },
-    "price": {
-      "type": "decimal"
-    },
     "category": {
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::category.category"
     },
+    "codigosMotor": {
+      "type": "component",
+      "repeatable": true,
+      "component": "info.codigo-motor"
+    },
+    "basicInfo": {
+      "type": "component",
+      "repeatable": true,
+      "component": "basic-info.basic-info"
+    },
+    "comprobadoresInfo": {
+      "type": "component",
+      "repeatable": true,
+      "component": "comprobadores.specs-comprobadores"
+    },
+    "imageDieselCadena": {
+      "type": "component",
+      "repeatable": true,
+      "component": "image.diesel-cadena-image"
+    },
+    "imageDieselCorrea": {
+      "type": "component",
+      "repeatable": true,
+      "component": "image.diesel-correa-image"
+    },
+    "imageGasolinaCadena": {
+      "type": "component",
+      "repeatable": true,
+      "component": "image.gasolina-cadena-image"
+    },
+    "imageGasolinaCorrea": {
+      "type": "component",
+      "repeatable": true,
+      "component": "image.gasolina-correa-image"
+    },
+    "imagePremium": {
+      "type": "component",
+      "repeatable": false,
+      "component": "image.image-premium"
+    },
+    "imagesProduct": {
+      "type": "component",
+      "repeatable": true,
+      "component": "image.product-images"
+    },
+    "infoChapaPintura": {
+      "type": "component",
+      "repeatable": true,
+      "component": "info.chapa-y-pintura"
+    },
+    "infoMotor": {
+      "type": "component",
+      "repeatable": true,
+      "component": "info.codigo-motor"
+    },
+    "infoDiagnosis": {
+      "type": "component",
+      "repeatable": true,
+      "component": "info.diagnosis"
+    },
+    "infoElectricidad": {
+      "type": "component",
+      "repeatable": true,
+      "component": "info.electricidad"
+    },
     "description": {
-      "type": "text"
-    },
-    "short_description": {
-      "type": "string"
-    },
-    "image_link": {
-      "type": "string"
-    },
-    "name": {
-      "type": "string"
+      "type": "component",
+      "repeatable": true,
+      "component": "description.content-product"
     }
   }
 }

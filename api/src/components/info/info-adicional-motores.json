@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_info_info_adicional_motores",
+  "info": {
+    "displayName": "Info Adicional Motores"
+  },
+  "options": {},
+  "attributes": {
+    "years": {
+      "type": "string"
+    },
+    "combustible": {
+      "type": "json"
+    },
+    "tipo": {
+      "type": "string"
+    }
+  }
+}

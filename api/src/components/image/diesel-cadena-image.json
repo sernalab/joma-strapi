@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_image_diesel_cadena_images",
+  "info": {
+    "displayName": "Diesel Cadena Image"
+  },
+  "options": {},
+  "attributes": {
+    "url": {
+      "type": "string"
+    },
+    "alt": {
+      "type": "string"
+    }
+  }
+}

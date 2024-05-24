@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_product_images_product_images",
+  "info": {
+    "displayName": "Product Images",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "url": {
+      "type": "string"
+    },
+    "alt": {
+      "type": "string"
+    }
+  }
+}

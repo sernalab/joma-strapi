@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_info_electricidads",
+  "info": {
+    "displayName": "Electricidad"
+  },
+  "options": {},
+  "attributes": {
+    "code": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    }
+  }
+}

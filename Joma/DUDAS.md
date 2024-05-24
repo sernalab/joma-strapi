@@ -50,3 +50,19 @@ JOD03 -> Category 2???
 
 els usuaris poden veure el pedido desde la web?
 Els distribuidors han de poder pagar desde la web? o senvia
+
+no cuadra descripcion taman1o motor con short descruption
+
+      // {
+      //   "id_product": "22",
+      //   "id_category": "11",
+      //   "price": "0.000000",
+      //   "reference": "JOD04",
+      //   "description": "Marcas  VW, Audi, Seat, Skoda, Chrysler, Dodge, Ford, Mitsubishi   Modelos   Volkswagen  AMAROK, BEETLE, BORA, CADDY, CADDY MAXI, CC, CRAFTER, EOS, FOX, GOLF IV, GOLF PLUS, GOLF V, GOLF VI, JETTA, LUPO, PASSAT, POLO, SCIROCCO, SHARAN, TIGUAN, TOURAN, TRANSPORTER T4, TRANSPORTER T5 Audi  A1, A2, A3, A4, A5, A6, Q3, Q5, TT Seat  ALHAMBRA, ALTEA, AROSA, CORDOBA, EXEO, IBIZA, LEON, TOLEDO Skoda  FABIA, FABIA II, OCTAVIA, OCTAVIA II, OCTAVIA TOUR, PRAKTIK, RAPID, RAPID SPACEBACK, ROOMSTER, SUPERB, SUPERB II, YETI, YETI OUTDOOR Chrysler  COMPASS, PATRIOT, SEBRING Dodge  AVENGER, CALIBER, JOURNEY Ford  Galaxy Mitsubishi  Grandis, Outlander   Motores  D, SD, SDI, TD, y TDI (1.9 y 2.0)   Códigos de motor 1.2  ANY, AYZ, CFWA   1.4  AMF, ATD, ATL, BAY, BHC, BMS, BNM, BNV, BWB   1.6  CAYA, CAYB, CAYC, CAYD, CAYE, CLNA   1.9  AJM, AMG, ANJ, ANU, ANW, ARL, ARX, ASZ, ASZ1, ATD, ATJ, AUY, AVB, AVF, AVQ, AWT, AWX, AXB, AXC, AXR, BEW, BJB, BKC, BKE, BLS, BLT, BMT, BMR, BPX, BRB, BRS, BRU, BSU, BSV, BSW, BTB, BUK, BVK, BXE, BXF, BXJ 2.0  AJM, AZV, BDJ, BDK, BEW, BGW, BHW, BKD, BKP, BKQ, BLB, BMA, BMM, BMN, BMP, BMR, BNA, BPW, BRA, BRC, BRD, BRE, BRF, BRT, BSS, BST, BSY, BUY, BUZ, BVA, BVE, BVF, BVG, BVH, BVW, BWC, BWV, BYL, CAAA, CAAB, CAAC, CAAD, CAAE, CAGA, CAGB, CAGC, CAHA, CAHB, CBAA, CBAB, CBAC, CBBA, CBBB, CBDA, CBDB, CBDC, CBEA, CCHA, CCHB, CDBA, CDBB, CDBD, CDCA, CEGA, CFCA, CFFA, CFFB, CFFD, CFFE, CFGB, CFGC, CFGD, CFHA, CFHB, CFHC, CFHD, CFHE, CFHF, CFJA, CFWA, CGLA, CGLB, CGLC, CGLD, CGLE, CJAA, CJCA, CJCB, CJCC, CJCD, CKTB, CKTC, CKUB, CKUC, CLCA, CLCB, CLJA, CLLA, CMEA, CMFA, CMFB, CMGB, CNEA, CNFA, CNFB, CQMA, CSHA, ECD, ECD (BSY), ECD (BWD), ECD (BYL)   OEM  T10050, T10060A, T10100, T10115 , T20102, T40098, VAG3359 Información Adicional  2000-202... Diesel Correa ",
+      //   "short_description": "Kit calado distribuciones VW 1.9 y 2.0",
+      //   "image_link": "https://www.joma-tools.com/catalogo/img/cms/GR+Co_1.jpg",
+      //   "name": "JOD04 Kit calado VAG, Chrysler, Dodge, Ford, Mitsubishi"
+      // },
+
+
+

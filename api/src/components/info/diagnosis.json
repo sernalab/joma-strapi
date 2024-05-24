@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_info_diagnoses",
+  "info": {
+    "displayName": "Diagnosis"
+  },
+  "options": {},
+  "attributes": {
+    "novedades": {
+      "type": "string"
+    },
+    "medidas": {
+      "type": "string"
+    },
+    "codigo": {
+      "type": "string"
+    },
+    "validez": {
+      "type": "string"
+    },
+    "tipo": {
+      "type": "string"
+    },
+    "rango": {
+      "type": "string"
+    }
+  }
+}
