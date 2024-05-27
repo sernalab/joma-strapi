@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import {
   getProducts,
   getProductsByCategory,
@@ -105,7 +106,9 @@ function CatalogoPage() {
                 <li key={product.id}>
                   {product.attributes.basicInfo.map((info) => (
                     <div key={info.id}>
-                      <strong>{info.name}</strong>
+                      <Link to={`/details/${product.id}`}>
+                        <strong>{info.name}</strong>
+                      </Link>
                       <p>{info.description}</p>
                     </div>
                   ))}

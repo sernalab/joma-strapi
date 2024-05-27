@@ -1,6 +1,27 @@
-import { Link } from "react-router-dom";
+import { useState, useEffect } from "react";
+import { Link, useParams } from "react-router-dom";
+import { getProductById } from "../services/productServices";
 
 function ProductDetailPage() {
+  const { id } = useParams();
+  const [product, setProduct] = useState(null);
+
+  useEffect(() => {
+    async function fetchProduct() {
+      try {
+        const data = await getProductById(id);
+        setProduct(data);
+        console.log("data producto", data);
+      } catch (error) {
+        console.log("Error fetching product details:", error);
+      }
+    }
+
+    fetchProduct();
+  }, [id]);
+
+  if (!product) return <div>Loading...</div>;
+
   return (
     <section className="max-w-screen-xl mx-auto p-4 md:p-8 lg:p-12">
       <Link

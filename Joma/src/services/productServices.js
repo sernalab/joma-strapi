@@ -1,4 +1,4 @@
-const API_URL = import.meta.env.VITE_API_URL;
+import { API_URL } from "../config/globals";
 
 export async function getProducts() {
   try {
@@ -14,6 +14,20 @@ export async function getProducts() {
   } catch (error) {
     console.log("Error al cargar las vacantes:", error);
     return [];
+  }
+}
+
+export async function getProductById(productId) {
+  try {
+    const response = await fetch(`${API_URL}/products/${productId}?populate=*`);
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+    const { data } = await response.json();
+    return data;
+  } catch (error) {
+    console.log("Error fetching product details:", error);
+    return null;
   }
 }
 
