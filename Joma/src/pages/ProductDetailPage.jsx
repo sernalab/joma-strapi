@@ -2,6 +2,8 @@ import { useState, useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
 import { getProductById } from "../services/productServices";
 
+import GalleryImage from "../components/Ecommerce/GalleryImage";
+
 function ProductDetailPage() {
   const { id } = useParams();
   const [product, setProduct] = useState(null);
@@ -22,6 +24,9 @@ function ProductDetailPage() {
 
   if (!product) return <div>Loading...</div>;
 
+  const { attributes } = product;
+  const { basicInfo, imagesProduct = [] } = attributes;
+
   return (
     <section className="max-w-screen-xl mx-auto p-4 md:p-8 lg:p-12">
       <Link
@@ -30,17 +35,14 @@ function ProductDetailPage() {
       >
         Volver a novedades
       </Link>
-      <div className="grid grid-cols-2 gap-12 mt-7">
+      <div className="grid grid-cols-2 gap-12 mt-12">
         <div className="col-span-1">
-          <img
-            src="https://www.joma-tools.com/catalogo/1546-large_default/juego-cutter-jo017.jpg"
-            alt="Detalle del producto"
-            className="w-full object-cover h-auto"
-          />
+          <GalleryImage imagesProduct={imagesProduct} />
         </div>
         <div className="col-span-1">
-          <h2 className="text-2xl font-bold">TITLE</h2>
-          <p className="mb-4">REFERENCIA XXXXXX</p>
+          <h2 className="text-2xl font-bold">{basicInfo[0].name}</h2>
+          <p className="mb-4">REFERENCIA:</p>
+          <span>{basicInfo[0].reference}</span>
           <ul className="list-disc list-inside text-gray-800 bg-gray-200 p-3">
             <li>
               Now this is a story all about how, my life got flipped turned
