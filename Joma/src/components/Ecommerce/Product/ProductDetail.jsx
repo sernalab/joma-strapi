@@ -5,6 +5,7 @@
 
 import ProductChapaPintura from "./ProductChapaPintura";
 import ProductDescription from "./ProductDescription";
+import ProductMotorInfo from "./ProductMotorInfo";
 
 function ProductDetail({ product }) {
   const { attributes } = product;
@@ -15,6 +16,7 @@ function ProductDetail({ product }) {
     description,
     infoChapaPintura,
     infoElectricidad,
+    codigosMotor,
   } = attributes;
 
   return (
@@ -22,7 +24,10 @@ function ProductDetail({ product }) {
       {description && description.length > 0 && (
         <ProductDescription description={description} />
       )}
-      <ProductChapaPintura infoChapaPintura={infoChapaPintura} />
+      {infoChapaPintura && infoChapaPintura.length > 0 && (
+        <ProductChapaPintura infoChapaPintura={infoChapaPintura} />
+      )}
+      <ProductMotorInfo codigosMotor={codigosMotor} />
       {/* {imagePremium && <PremiumBadge image={imagePremium} />}
       {imagesProduct && imagesProduct.length > 0 && (
         <ProductImageGallery images={imagesProduct} />

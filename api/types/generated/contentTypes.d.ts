@@ -1006,7 +1006,7 @@ export interface ApiProductProduct extends Schema.CollectionType {
       'oneToOne',
       'api::category.category'
     >;
-    codigosMotor: Attribute.Component<'info.codigo-motor', true>;
+    codigosMotor: Attribute.Component<'info.codigo-motor'>;
     basicInfo: Attribute.Component<'basic-info.basic-info', true>;
     comprobadoresInfo: Attribute.Component<
       'comprobadores.specs-comprobadores',

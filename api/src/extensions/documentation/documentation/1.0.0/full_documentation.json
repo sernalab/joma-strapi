@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2024-05-24T11:28:06.948Z"
+    "x-generation-date": "2024-05-27T19:50:19.624Z"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -2844,10 +2844,7 @@
                 "example": "string or id"
               },
               "codigosMotor": {
-                "type": "array",
-                "items": {
-                  "$ref": "#/components/schemas/InfoCodigoMotorComponent"
-                }
+                "$ref": "#/components/schemas/InfoCodigoMotorComponent"
               },
               "basicInfo": {
                 "type": "array",
@@ -3387,10 +3384,7 @@
             }
           },
           "codigosMotor": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/InfoCodigoMotorComponent"
-            }
+            "$ref": "#/components/schemas/InfoCodigoMotorComponent"
           },
           "basicInfo": {
             "type": "array",
