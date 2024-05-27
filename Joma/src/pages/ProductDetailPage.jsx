@@ -3,6 +3,9 @@ import { Link, useParams } from "react-router-dom";
 import { getProductById } from "../services/productServices";
 
 import GalleryImage from "../components/Ecommerce/GalleryImage";
+import ShareButtons from "../components/Ecommerce/ShareButtons";
+import ProductBasicInfo from "../components/Ecommerce/Product/ProductBasicInfo";
+import ProductDetail from "../components/Ecommerce/Product/ProductDetail";
 
 function ProductDetailPage() {
   const { id } = useParams();
@@ -28,32 +31,38 @@ function ProductDetailPage() {
   const { basicInfo, imagesProduct = [] } = attributes;
 
   return (
-    <section className="max-w-screen-xl mx-auto p-4 md:p-8 lg:p-12">
-      <Link
-        to={"/news"}
-        className="text-blue-500 hover:text-blue-600 font-medium"
-      >
-        Volver a novedades
-      </Link>
-      <div className="grid grid-cols-2 gap-12 mt-12">
+    <section className="max-w-screen-xl mx-auto py-4 md:py-8 lg:py-12">
+      <div className="bg-gray-200 p-4 mb-6">
+        <Link
+          to="/news"
+          className="text-blue-500 hover:text-blue-600 font-medium"
+        >
+          Volver a novedades
+        </Link>
+      </div>
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mt-6">
         <div className="col-span-1">
           <GalleryImage imagesProduct={imagesProduct} />
+          <p className="mt-4 text-gray-600">
+            Código referencia producto:{" "}
+            <span className="text-xl font-bold">{basicInfo[0].reference}</span>
+          </p>
         </div>
         <div className="col-span-1">
-          <h2 className="text-2xl font-bold">{basicInfo[0].name}</h2>
-          <p className="mb-4">REFERENCIA:</p>
-          <span>{basicInfo[0].reference}</span>
-          <ul className="list-disc list-inside text-gray-800 bg-gray-200 p-3">
-            <li>
-              Now this is a story all about how, my life got flipped turned
-              upside down
-            </li>
-            <li>And I like to take a minute and sit right here</li>
-            <li>
-              I'll tell you how I became the prince of a town called Bel-Air
-            </li>
-          </ul>
-          <div>COMPARTIR</div>
+          <ProductBasicInfo
+            name={basicInfo[0].name}
+            price={basicInfo[0].price}
+            reference={basicInfo[0].reference}
+          />
+          <ProductDetail product={product} />
+          <div className="share-section mb-6">
+            <h3 className="text-lg font-semibold mb-2">Compartir</h3>
+            <ShareButtons
+              url={window.location.href}
+              title={basicInfo[0].name}
+              description={basicInfo[0].reference}
+            />
+          </div>
         </div>
       </div>
     </section>
