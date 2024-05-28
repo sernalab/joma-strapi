@@ -19,7 +19,9 @@ export async function getProducts() {
 
 export async function getProductById(productId) {
   try {
-    const response = await fetch(`${API_URL}/products/${productId}?populate=*`);
+    const response = await fetch(
+      `${API_URL}/products/50?populate[codigosMotor][populate][0]=marcas&populate[codigosMotor][populate][1]=modelos&populate[codigosMotor][populate][2]=motoresDiesel&populate[codigosMotor][populate][3]=motoresGasolina&populate[codigosMotor][populate][4]=infoAdicional&populate[basicInfo]=*&populate[category]=*&populate[imagesProduct]=*&populate[imageDieselCorrea]=*&populate[imageGasolinaCorrea]=*&populate[imagePremium]=*&populate[infoChapaPintura]=*&populate[infoMotor]=*&populate[infoDiagnosis]=*&populate[infoElectricidad]=*&populate[description]=*`
+    );
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
