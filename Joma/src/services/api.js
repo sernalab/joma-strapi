@@ -44,3 +44,18 @@ export async function getMenu() {
     return [];
   }
 }
+
+export async function getVideos() {
+  try {
+    const response = await fetch(`${API_URL}/videos?populate=*`);
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+    const { data } = await response.json();
+    console.log("getVideos", data);
+    return data;
+  } catch (error) {
+    console.log("Error al cargar las vacantes:", error);
+    return [];
+  }
+}
