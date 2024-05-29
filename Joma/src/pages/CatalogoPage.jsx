@@ -9,6 +9,7 @@ import { getCategories, getMenu } from "../services/api";
 
 import ProductsMenu from "../components/Ecommerce/ProductsMenu";
 import ProductCarouselComponent from "../components/ProductCarousel";
+import Login from "../components/Ecommerce/Auth/Login";
 import Tabs from "../components/Ecommerce/Tabs";
 import FeaturedProducts from "../components/Ecommerce/FeaturedProducts";
 
@@ -60,6 +61,7 @@ function CatalogoPage() {
   return (
     <>
       <section className="max-w-screen-xl mx-auto p-4 md:p-8 lg:p-12">
+        <Login />
         <ProductCarouselComponent />
 
         <div className="mt-10">
