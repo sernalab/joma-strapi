@@ -47,7 +47,7 @@ function CatalogoPage() {
     console.log("Category ID:", categoryId);
     try {
       const products = await getProductsByCategory(categoryId);
-      console.log("Fetched Products:", products); // Verifica los productos aquí
+      console.log("Fetched Products:", products);
       setSelectedCategoryProducts(products);
     } catch (error) {
       console.log("ERROR FETCHING PRODUCTS BY CATEGORY", error);
@@ -61,7 +61,11 @@ function CatalogoPage() {
   return (
     <>
       <section className="max-w-screen-xl mx-auto p-4 md:p-8 lg:p-12">
-        <Login />
+        <Link to="/login">
+          <button className="py-2 px-4 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75">
+            Go to Login Page
+          </button>
+        </Link>
         <ProductCarouselComponent />
 
         <div className="mt-10">

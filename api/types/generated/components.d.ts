@@ -12,6 +12,8 @@ export interface BasicInfoBasicInfo extends Schema.Component {
     reference: Attribute.String & Attribute.Required;
     id_product: Attribute.Integer;
     price: Attribute.Decimal;
+    priceA: Attribute.Decimal;
+    priceB: Attribute.Decimal;
   };
 }
 

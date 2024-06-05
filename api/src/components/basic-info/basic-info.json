@@ -21,6 +21,12 @@
     },
     "price": {
       "type": "decimal"
+    },
+    "priceA": {
+      "type": "decimal"
+    },
+    "priceB": {
+      "type": "decimal"
     }
   }
 }

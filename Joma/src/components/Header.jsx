@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
-import { useJobs } from "../config/JobsContext";
+import { useJobs } from "../context/JobsContext";
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
