@@ -112,17 +112,6 @@ function LoginPage() {
 
           {error && <p className="text-red-600 mt-2">{error}</p>}
 
-          {/* <div className="mt-6 text-center">
-            <p className="text-sm text-gray-600">
-              Don't have an account?{" "}
-              <a
-                href="#"
-                className="font-medium text-blue-600 hover:text-blue-500"
-              >
-                Sign up
-              </a>
-            </p>
-          </div> */}
           <div className="flex mt-3 text-sm">
             <span className="text-gray-500">*</span>
             <p className="text-gray-500">

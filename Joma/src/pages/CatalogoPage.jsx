@@ -4,10 +4,8 @@ import {
   getProducts,
   getProductsByCategory,
 } from "../services/productServices";
-
 import { getCategories, getMenu } from "../services/api";
 import { useAuthContext } from "../context/AuthContext";
-
 import ProductsMenu from "../components/Ecommerce/ProductsMenu";
 import ProductCarouselComponent from "../components/ProductCarousel";
 import Tabs from "../components/Ecommerce/Tabs";
@@ -99,7 +97,7 @@ function CatalogoPage() {
             </option>
             {menuItems.map((menuItem) => (
               <option key={menuItem.id} value={menuItem.id}>
-                {menuItem.attributes.title}(
+                {menuItem.attributes.title} (
                 {menuItem.attributes.categories.data.length} categorías)
               </option>
             ))}

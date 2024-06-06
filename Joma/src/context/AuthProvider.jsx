@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { AuthContext } from "./AuthContext";
-import { API_URL } from "../config/globals";
+import { API_URL, BEARER } from "../config/globals";
 import { getToken, setToken, removeToken } from "../config/helpers";
 
 const AuthProvider = ({ children }) => {
@@ -11,12 +11,13 @@ const AuthProvider = ({ children }) => {
     setIsLoading(true);
     try {
       const response = await fetch(`${API_URL}/users/me`, {
-        headers: { Authorization: `Bearer ${token}` },
+        headers: { Authorization: `${BEARER} ${token}` },
       });
       const data = await response.json();
       setUser(data);
     } catch (error) {
       console.error("Error fetching logged in user", error);
+      removeToken();
     } finally {
       setIsLoading(false);
     }
