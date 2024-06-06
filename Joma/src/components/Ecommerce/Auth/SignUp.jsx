@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useAuth } from "../../../context/AuthContext";
+import { useAuthContext } from "../../../context/AuthContext";
 import Spinner from "../../Spinner";
 
 function SignUp() {
@@ -8,7 +8,7 @@ function SignUp() {
   const [password, setPassword] = useState("");
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(false);
-  const { login } = useAuth();
+  const { login } = useAuthContext();
 
   const handleSubmit = async (e) => {
     e.preventDefault();

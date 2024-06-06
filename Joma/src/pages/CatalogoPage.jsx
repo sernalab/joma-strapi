@@ -6,10 +6,10 @@ import {
 } from "../services/productServices";
 
 import { getCategories, getMenu } from "../services/api";
+import { useAuthContext } from "../context/AuthContext";
 
 import ProductsMenu from "../components/Ecommerce/ProductsMenu";
 import ProductCarouselComponent from "../components/ProductCarousel";
-import Login from "../components/Ecommerce/Auth/Login";
 import Tabs from "../components/Ecommerce/Tabs";
 import FeaturedProducts from "../components/Ecommerce/FeaturedProducts";
 
@@ -19,6 +19,13 @@ function CatalogoPage() {
   const [selectedCategoryProducts, setSelectedCategoryProducts] = useState([]);
   const [menuItems, setMenu] = useState([]);
   const [selectedMenu, setSelectedMenu] = useState("");
+  const { user, isTokenValid, logout } = useAuthContext();
+
+  useEffect(() => {
+    if (user && !isTokenValid()) {
+      logout();
+    }
+  }, [user, isTokenValid, logout]);
 
   useEffect(() => {
     async function fetchData() {
@@ -66,8 +73,19 @@ function CatalogoPage() {
             Go to Login Page
           </button>
         </Link>
+        <p>
+          SEGUIMOS logeados como:{" "}
+          {user && isTokenValid() ? user.username : "Nadie"}
+        </p>
+        {user && isTokenValid() && (
+          <button
+            onClick={logout}
+            className="py-2 px-4 bg-red-600 text-white font-semibold rounded-lg shadow-md hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-400 focus:ring-opacity-75 mt-4"
+          >
+            Logout
+          </button>
+        )}
         <ProductCarouselComponent />
-
         <div className="mt-10">
           <span className="font-bold">Categorías</span>
           <select

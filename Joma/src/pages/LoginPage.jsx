@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useAuth } from "../context/AuthContext";
+import { useAuthContext } from "../context/AuthContext";
 import { useNavigate } from "react-router-dom";
 
 function LoginPage() {
@@ -7,7 +7,7 @@ function LoginPage() {
   const [password, setPassword] = useState("");
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(false);
-  const { login } = useAuth();
+  const { login } = useAuthContext();
   const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
@@ -112,7 +112,7 @@ function LoginPage() {
 
           {error && <p className="text-red-600 mt-2">{error}</p>}
 
-          <div className="mt-6 text-center">
+          {/* <div className="mt-6 text-center">
             <p className="text-sm text-gray-600">
               Don't have an account?{" "}
               <a
@@ -121,6 +121,12 @@ function LoginPage() {
               >
                 Sign up
               </a>
+            </p>
+          </div> */}
+          <div className="flex mt-3 text-sm">
+            <span className="text-gray-500">*</span>
+            <p className="text-gray-500">
+              Acceso sólo a distribuidores. Pide tu acceso llamando:
             </p>
           </div>
         </form>
