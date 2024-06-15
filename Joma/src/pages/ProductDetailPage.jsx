@@ -52,6 +52,8 @@ function ProductDetailPage() {
           <ProductBasicInfo
             name={basicInfo[0].name}
             price={basicInfo[0].price}
+            priceA={basicInfo[0].priceA}
+            priceB={basicInfo[0].priceB}
             reference={basicInfo[0].reference}
           />
           <ProductDetail product={product} />

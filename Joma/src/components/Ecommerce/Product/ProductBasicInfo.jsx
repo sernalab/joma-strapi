@@ -1,11 +1,26 @@
-function ProductBasicInfo({ name, price, reference }) {
+import { useAuthContext } from "../../../context/AuthContext";
+import { useEffect } from "react";
+
+function ProductBasicInfo({ name, price, priceA, priceB, reference }) {
+  const { user } = useAuthContext();
+
+  useEffect(() => {
+    console.log("Usuario logueado:", user);
+  }, [user]);
+
+  const getPrice = () => {
+    if (!user) return price;
+    if (user.role === "Distribuidor A") return priceA;
+    if (user.role === "Distribuidor B") return priceB;
+    return price;
+  };
+
   return (
     <div className="col-span-1">
       <h2 className="text-2xl font-bold mb-4">{name}</h2>
       <div className="price-section mb-4">
-        {price && (
-          <p className="text-3xl text-red-600 font-bold mb-2">{price}€</p>
-        )}
+        <p className="text-3xl text-red-600 font-bold mb-2">{getPrice()}€</p>
+
         <span htmlFor="quantity" className="mr-2 font-bold">
           Cantidad:
         </span>
