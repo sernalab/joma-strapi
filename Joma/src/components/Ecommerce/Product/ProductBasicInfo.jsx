@@ -1,5 +1,6 @@
 import { useAuthContext } from "../../../context/AuthContext";
 import { useEffect } from "react";
+import { getPriceBasedOnRole } from "../../../config/utils";
 
 function ProductBasicInfo({ name, price, priceA, priceB, reference }) {
   const { user } = useAuthContext();
@@ -8,18 +9,13 @@ function ProductBasicInfo({ name, price, priceA, priceB, reference }) {
     console.log("Usuario logueado:", user);
   }, [user]);
 
-  const getPrice = () => {
-    if (!user) return price;
-    if (user.role === "Distribuidor A") return priceA;
-    if (user.role === "Distribuidor B") return priceB;
-    return price;
-  };
+  const finalPrice = getPriceBasedOnRole(user, price, priceA, priceB);
 
   return (
     <div className="col-span-1">
       <h2 className="text-2xl font-bold mb-4">{name}</h2>
       <div className="price-section mb-4">
-        <p className="text-3xl text-red-600 font-bold mb-2">{getPrice()}€</p>
+        <p className="text-3xl text-red-600 font-bold mb-2">{finalPrice}€</p>
 
         <span htmlFor="quantity" className="mr-2 font-bold">
           Cantidad:
