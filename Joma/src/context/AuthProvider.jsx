@@ -45,8 +45,8 @@ export const AuthProvider = ({ children }) => {
       }
 
       const data = await response.json();
-      setUser(data.user);
       setToken(data.jwt);
+      await fetchLoggedInUser(data.jwt);
     } catch (error) {
       console.error("Error logging in:", error);
       throw error;
