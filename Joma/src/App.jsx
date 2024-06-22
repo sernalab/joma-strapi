@@ -3,6 +3,8 @@ import { Route, Routes, useLocation } from "react-router-dom";
 import { JobsProvider } from "./context/JobsContext.jsx";
 import { AuthProvider } from "./context/AuthProvider.jsx";
 
+import { Cart } from "./components/Ecommerce/Cart.jsx";
+
 import "preline/preline";
 
 import Header from "./components/Header";
@@ -67,6 +69,7 @@ function App() {
             </div>
           </main>
           <Footer />
+          <Cart />
         </JobsProvider>
       </AuthProvider>
     </>

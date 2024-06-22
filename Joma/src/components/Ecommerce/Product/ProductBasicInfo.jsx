@@ -1,15 +1,22 @@
+import { useEffect, useState } from "react";
 import { useAuthContext } from "../../../context/AuthContext";
-import { useEffect } from "react";
+import { useCartContext } from "../../../context/CartContext";
 import { getPriceBasedOnRole } from "../../../config/utils";
 
-function ProductBasicInfo({ name, price, priceA, priceB, reference }) {
+function ProductBasicInfo({ id, name, price, priceA, priceB, reference }) {
   const { user } = useAuthContext();
+  const { addItemToCart } = useCartContext();
+  const [quantity, setQuantity] = useState(1);
 
   useEffect(() => {
     console.log("Usuario logueado:", user);
   }, [user]);
 
   const finalPrice = getPriceBasedOnRole(user, price, priceA, priceB);
+
+  const handleAddToCart = () => {
+    addItemToCart({ id, name, price: finalPrice, quantity });
+  };
 
   return (
     <div className="col-span-1">
@@ -24,10 +31,14 @@ function ProductBasicInfo({ name, price, priceA, priceB, reference }) {
           <input
             id="quantity"
             type="number"
-            defaultValue="1"
+            value={quantity}
+            onChange={(e) => setQuantity(Number(e.target.value))}
             className="w-16 border p-2"
           />
-          <button className="w-full bg-joma-color text-white py-2 px-4 rounded">
+          <button
+            onClick={handleAddToCart}
+            className="w-full bg-joma-color text-white py-2 px-4 rounded"
+          >
             Añadir al carrito
           </button>
         </div>

@@ -8,6 +8,8 @@ import ProductDescription from "./ProductDescription";
 import ProductMotorInfo from "./ProductMotorInfo";
 
 function ProductDetail({ product }) {
+  console.log("Product data:", product);
+
   const { attributes } = product;
   const {
     basicInfo,
@@ -28,6 +30,7 @@ function ProductDetail({ product }) {
         <ProductChapaPintura infoChapaPintura={infoChapaPintura} />
       )}
       <ProductMotorInfo codigosMotor={codigosMotor} />
+
       {/* {imagePremium && <PremiumBadge image={imagePremium} />}
       {imagesProduct && imagesProduct.length > 0 && (
         <ProductImageGallery images={imagesProduct} />
